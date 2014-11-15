@@ -314,7 +314,7 @@ app.controller("MainCtrl", ["$scope", function($scope){
  				$('.portfolio-first-let').removeClass('portfolio-first-let-active');
  			}
 	 		},{
-	 			offset: '70px',
+	 			offset: '120px',
 	 			continuous: false
 	 		}
 	 	)
