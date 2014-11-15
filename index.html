@@ -1,0 +1,405 @@
+<html ng-app="personalSite">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="icon" type="image/ico" href="images/favicon.ico"> -->
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<!-- RAJDHANI FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400' rel='stylesheet' type='text/css'>
+	<!-- GOOGLE FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.1.js"></script>
+	<!-- ANGULAR -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+	<!-- ANGULAR ANIMATE -->
+	<script src="js/angular-animate.js"></script>
+	<!-- WAYPOINTS -->
+	<script src="js/waypoints.js"></script>
+	<!-- JS -->
+  <script src="js/app.js"></script>
+  <title>Brett Kadowaki</title>
+</head>
+
+<body ng-controller="MainCtrl">
+
+	<!-- MAIN CONTAINER OPEN -->
+	<div id="main-container">
+
+		<div id="cover">
+			<div class="letter-divs" ng-repeat="l in letters | limitTo: limitNum track by $index" ng-class="{'first': $index % 12 === 0, 'second': $index % 12 === 1, 'third': $index % 12 === 2, 'fourth': $index % 12 === 3, 'fifth': $index % 12 === 4, 'sixth': $index % 12 === 5, 'seventh': $index % 12 === 6, 'eighth': $index % 12 === 7, 'ninth': $index % 12 === 8, 'tenth': $index % 12 === 9, 'eleventh': $index % 12 === 10, 'twelfth': $index % 12 === 11}">
+				{{letters[$index]}}
+			</div>
+			<div class="welcome">HELLO WORLD</div>
+			<div class="me">Brett Kadowaki | Front-End Web Developer</div>
+		</div>
+		
+		<nav id="nav-bar">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 link-container" id="about-box">
+					<a id="about-link" class="nav-words">
+						<p ng-repeat="l in aboutlets track by $index" ng-class="{'about1':$index === 0,'about2':$index===1,'about3':$index===2,'about4':$index===3, 'about5':$index===4}" class="nav-links">
+							{{aboutlets[$index]}}
+						</p>			
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 link-container" id="portfolio-box">
+					<a id="portfolio-link" class="nav-words">
+						<p ng-repeat="l in worklets track by $index" ng-class="{'work1':$index===0,'work2':$index===1,'work3':$index===2,'work4':$index===3,'work5':$index===4,'work6':$index===5,'work7':$index===6,'work8':$index===7,'work9':$index===8}" class="nav-links">
+							{{worklets[$index]}}
+						</p>				
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 link-container" id="contact-box">
+					<a id="contact-link" class="nav-words">
+						<p ng-repeat="l in contactlets track by $index" ng-class="{'contact1':$index === 0,'contact2':$index===1,'contact3':$index===2,'contact4':$index===3, 'contact5':$index===4,'contact6':$index===5, 'contact7':$index===6}" class="nav-links">
+							{{contactlets[$index]}}
+						</p>			
+					</a>
+				</div>
+			</div>
+		</nav>
+		
+
+		<div id="meat">
+			<div id="about-container" class="container sections">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="section-title"><span class="about-first-let">A</span>BOUT</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" id="left-about-cont">
+						<div id="bio">
+							I am a <h3 id="noun1">GOD FEARING</h3>
+							<!-- <span class="glyphicon glyphicon-cog small"> -->
+							<h3 id="noun2">FRONT-END DEVELOPER</h3>
+						</div>
+						<div id="icons">
+							<!-- GITHUB -->
+							<a href="https://github.com/bkadowaki" target="_blank"><i class="fa fa-github-square"></i></a>
+							<!-- LINKEDIN -->
+							<a href="https://www.linkedin.com/in/brettkadowaki" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+							<!-- GMAIL -->
+							<a href="mailto:brett.kadowaki@gmail.com?subject=I just came to say hello"><i class="fa fa-envelope-square"></i></a>
+						</div>
+					</div>
+
+					<div class="col-md-8" id="right-about-cont">
+						<div class="row">
+							<div class="col-md-12 skills-title">
+								<h2>SKILLS</h2>
+							</div>
+						</div>
+						<div id="left-tech" class="right-about-inner">
+							<div class="names-left">
+								<div class="tech-names">AngularJS</div>
+								<div class="tech-names">JavaScript</div>
+								<div class="tech-names">HTML5</div>
+								<div class="tech-names">CSS3</div>
+								<div class="tech-names">Ruby on Rails</div>
+								<div class="tech-names">jQuery | jQueryUI</div>
+								<div class="tech-names">D3</div>
+								<div class="tech-names">SASS</div>
+								<div class="tech-names">JSON</div>
+								<div class="tech-names">ExpressJS</div>
+							</div>
+							<div class="levels-right">
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>								
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+							</div>
+						</div>
+						<div id="right-tech" class="right-about-inner">
+							<div class="names-left">
+								<div class="tech-names">Twitter Bootstrap</div>
+								<div class="tech-names">Zurb Foundation</div>
+								<div class="tech-names">PostgreSQL</div>
+								<div class="tech-names">MongoDB</div>
+								<div class="tech-names">Git | GitHub</div>
+								<div class="tech-names">Heroku</div>
+								<div class="tech-names">MVC Concepts</div>
+								<div class="tech-names">Photoshop</div>
+								<div class="tech-names">Market Knowledge in <br>Digital Advertising</div>
+							</div>
+							<div class="levels-right">
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>									
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+								</div>
+								<div class="tech-levels">
+									<i class="fa fa-square hide-me"></i>
+									<i class="fa fa-square hide-me"></i>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="portfolio-container" class="container sections">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="section-title"><span class="portfolio-first-let">P</span>ORTFOLIO</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div id="projects-cont">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-12 projects" ng-repeat="p in portfolioobjs track by $index" ng-click="toggle[$index]=!toggle[$index]" >
+								<div ng-if="toggle[$index]" class="work-info text animate-if">{{p.name}}<br><hr>
+									{{p.description}}<br>
+									Technologies Used:<br>
+									Front-End- {{p.frontend}}<br>
+									Backend- {{p.backend}}<br>
+									Database- {{p.database}}<br>
+									<a href="{{p.url}}" target="_blank">See More <i class="fa fa-angle-double-right"></i></a>
+								</div>
+								<div class="work-info">
+								<a href=""><img ng-src="{{p.image}}" class="project-images"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact-container" class="container sections">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="section-title"><span class="contact-first-let">C</span>ONTACT</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" id="contact-info-cont">
+						<div id="contact-text">Let's Connect!</div>
+						<!-- GITHUB -->
+						<a href="https://github.com/bkadowaki" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>
+						<!-- LINKEDIN -->
+						<a href="https://www.linkedin.com/in/brettkadowaki" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+						<!-- GMAIL -->
+						<a href="mailto:brett.kadowaki@gmail.com?subject=I just came to say hello"><i class="fa fa-envelope-square fa-5x"></i></a>
+						<div id="logistics">L: Los Angeles, CA<br>C: three1zero.9three8.five9seven7<br>E: brett.kadowakiATgmail.com</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-text">Brett Kadowaki<br><i class="fa fa-copyright"></i>2014</div>
+			<a id="back-to-top"><i class="fa fa-angle-double-up fa-3x"></i></a>
+			<div id="shh">How'd you find me??? Well since we're here, I want you to know that I appreciate you! Yeah, you!</div>
+		</footer>
+	</div>
+	<!-- MAIN CONTAINER CLOSE -->
+
+</body>
+
+</html>
