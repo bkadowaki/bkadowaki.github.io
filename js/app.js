@@ -100,23 +100,23 @@ app.controller("MainCtrl", ["$scope", function($scope){
 // FALLING LETTERS ANIMATE FUNCTION
 
 	$(document).ready(function(){
-		$('.first').delay(1300).animate({top:'+=1000px'},3800)
-		$('.second').delay(1600).animate({top:'+=1000px'},4000)
-		$('.third').delay(1500).animate({top:'+=1000px'},3800)		
-		$('.fourth').delay(1600).animate({top:'+=1000px'},3000)
-		$('.fifth').delay(1400).animate({top:'+=1000px'},3500)
-		$('.sixth').delay(1400).animate({top:'+=1000px'},2800)		
-		$('.seventh').delay(1600).animate({top:'+=1000px'},3800)		
-		$('.eighth').delay(1600).animate({top:'+=1000px'},2700)		
-		$('.ninth').delay(1600).animate({top:'+=1000px'},3800)		
-		$('.tenth').delay(1500).animate({top:'+=1000px'},3000)		
-		$('.eleventh').delay(1300).animate({top:'+=1000px'},4100)
-		$('.twelfth').delay(1400).animate({top:'+=1000px'},4100)
+		$('.first').delay(1100).animate({top:'+=1000px'},3800)
+		$('.second').delay(1000).animate({top:'+=1000px'},4000)
+		$('.third').delay(1200).animate({top:'+=1000px'},3800)		
+		$('.fourth').delay(1300).animate({top:'+=1000px'},3000)
+		$('.fifth').delay(1200).animate({top:'+=1000px'},3500)
+		$('.sixth').delay(1200).animate({top:'+=1000px'},2800)		
+		$('.seventh').delay(1300).animate({top:'+=1000px'},3300)		
+		$('.eighth').delay(1000).animate({top:'+=1000px'},2700)		
+		$('.ninth').delay(1300).animate({top:'+=1000px'},3800)		
+		$('.tenth').delay(1200).animate({top:'+=1000px'},3000)		
+		$('.eleventh').delay(1000).animate({top:'+=1000px'},3700)
+		$('.twelfth').delay(1200).animate({top:'+=1000px'},3900)
 	});
 
 // FADE IN HELLO WORLD
 	$(document).ready(function(){
-		$('.welcome').delay(2500).fadeIn(800);
+		$('.welcome').delay(1800).fadeIn(800);
 	});	
 // INTERCHANGE HELLO WORLDS
 	(function(){
@@ -139,34 +139,34 @@ app.controller("MainCtrl", ["$scope", function($scope){
 
 // FADE IN .ME
 	$(document).ready(function(){
-		$('.me').delay(3500).fadeIn(800);
+		$('.me').delay(2500).fadeIn(800);
 	});	
 
 // FALLING NAV LINKS
 
 	$(document).ready(function(){
 
-		$('.about1').delay(1100).animate({top:'+=300px'},1300)			
-		$('.about2').delay(1300).animate({top:'+=300px'},1500)			
-		$('.about3').delay(1500).animate({top:'+=300px'},1700)			
-		$('.about4').delay(1400).animate({top:'+=300px'},1600)		
-		$('.about5').delay(1200).animate({top:'+=300px'},2100)	
-		$('.work1').delay(1100).animate({top:'+=300px'},1300)			
-		$('.work2').delay(1300).animate({top:'+=300px'},2000)			
-		$('.work3').delay(1500).animate({top:'+=300px'},1700)			
-		$('.work4').delay(1400).animate({top:'+=300px'},1400)			
-		$('.work5').delay(1400).animate({top:'+=300px'},1900)			
-		$('.work6').delay(1500).animate({top:'+=300px'},1500)			
-		$('.work7').delay(1400).animate({top:'+=300px'},1400)			
-		$('.work8').delay(1300).animate({top:'+=300px'},1700)			
-		$('.work9').delay(1400).animate({top:'+=300px'},1400)	
-		$('.contact1').delay(1100).animate({top:'+=300px'},1400)			
-		$('.contact2').delay(1300).animate({top:'+=300px'},1900)			
-		$('.contact3').delay(1500).animate({top:'+=300px'},1500)			
-		$('.contact4').delay(1300).animate({top:'+=300px'},2000)		
-		$('.contact5').delay(1400).animate({top:'+=300px'},1400)	
-		$('.contact6').delay(1400).animate({top:'+=300px'},1400)	
-		$('.contact7').delay(1500).animate({top:'+=300px'},1500)	
+		$('.about1').delay(900).animate({top:'+=300px'},1300)			
+		$('.about2').delay(1000).animate({top:'+=300px'},1500)			
+		$('.about3').delay(800).animate({top:'+=300px'},1700)			
+		$('.about4').delay(900).animate({top:'+=300px'},1600)		
+		$('.about5').delay(700).animate({top:'+=300px'},2100)	
+		$('.work1').delay(900).animate({top:'+=300px'},1300)			
+		$('.work2').delay(800).animate({top:'+=300px'},2000)			
+		$('.work3').delay(800).animate({top:'+=300px'},1700)			
+		$('.work4').delay(900).animate({top:'+=300px'},1400)			
+		$('.work5').delay(700).animate({top:'+=300px'},1900)			
+		$('.work6').delay(800).animate({top:'+=300px'},1500)			
+		$('.work7').delay(700).animate({top:'+=300px'},1400)			
+		$('.work8').delay(900).animate({top:'+=300px'},1700)			
+		$('.work9').delay(1000).animate({top:'+=300px'},1400)	
+		$('.contact1').delay(900).animate({top:'+=300px'},1400)			
+		$('.contact2').delay(1000).animate({top:'+=300px'},1900)			
+		$('.contact3').delay(600).animate({top:'+=300px'},1500)			
+		$('.contact4').delay(600).animate({top:'+=300px'},2000)		
+		$('.contact5').delay(800).animate({top:'+=300px'},1400)	
+		$('.contact6').delay(700).animate({top:'+=300px'},1400)	
+		$('.contact7').delay(900).animate({top:'+=300px'},1500)	
 	});
 
 	// SMOOTH SCROLLING WHEN CLICKING ON NAV LINKS
