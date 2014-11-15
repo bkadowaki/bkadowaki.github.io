@@ -102,21 +102,21 @@ app.controller("MainCtrl", ["$scope", function($scope){
 	$(document).ready(function(){
 		$('.first').delay(1100).animate({top:'+=1000px'},3800)
 		$('.second').delay(1000).animate({top:'+=1000px'},4000)
-		$('.third').delay(1200).animate({top:'+=1000px'},3800)		
-		$('.fourth').delay(1300).animate({top:'+=1000px'},3000)
+		$('.third').delay(1500).animate({top:'+=1000px'},3800)		
+		$('.fourth').delay(1400).animate({top:'+=1000px'},3000)
 		$('.fifth').delay(1200).animate({top:'+=1000px'},3500)
 		$('.sixth').delay(1200).animate({top:'+=1000px'},2800)		
-		$('.seventh').delay(1300).animate({top:'+=1000px'},3300)		
+		$('.seventh').delay(1400).animate({top:'+=1000px'},3300)		
 		$('.eighth').delay(1000).animate({top:'+=1000px'},2700)		
 		$('.ninth').delay(1300).animate({top:'+=1000px'},3800)		
 		$('.tenth').delay(1200).animate({top:'+=1000px'},3000)		
-		$('.eleventh').delay(1000).animate({top:'+=1000px'},3700)
+		$('.eleventh').delay(1600).animate({top:'+=1000px'},3700)
 		$('.twelfth').delay(1200).animate({top:'+=1000px'},3900)
 	});
 
 // FADE IN HELLO WORLD
 	$(document).ready(function(){
-		$('.welcome').delay(1800).fadeIn(800);
+		$('.welcome').delay(2000).fadeIn(800);
 	});	
 // INTERCHANGE HELLO WORLDS
 	(function(){
@@ -139,7 +139,7 @@ app.controller("MainCtrl", ["$scope", function($scope){
 
 // FADE IN .ME
 	$(document).ready(function(){
-		$('.me').delay(2500).fadeIn(800);
+		$('.me').delay(2700).fadeIn(800);
 	});	
 
 // FALLING NAV LINKS
