@@ -28,7 +28,7 @@
 	z-index: -1;
 }
 .welcome {
-	position: fixed;
+	position: absolute;
 	font-size: 4vw;
 	font-family: 'Rajdhani', sans-serif;
 	letter-spacing: 20px;
