@@ -42,7 +42,7 @@ app.controller("MainCtrl", ["$scope", function($scope){
 			image: "images/yearbooktall.png",
 			description: "WDI9's digital yearbook",
 			frontend: "AngularJS, JavaScript, jQuery, HTML5, CSS3, Twitter Bootstrap",
-			url: ''
+			url: 'https://wdi9ga.firebaseapp.com/'
 		}
 	];
 
