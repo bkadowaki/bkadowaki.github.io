@@ -26,7 +26,7 @@ app.controller("MainCtrl", ["$scope", function($scope){
 			frontend: "JavaScript, jQuery, HTML5, CSS3, Twitter Bootstrap",
 			backend: "Ruby on Rails",
 			database: "MongoDB",
-			url: 'http://kadowakiwedding.herokuapp.com/'
+			url: 'http://www.kadowakiwedding.com/'
 		},
 		{
 			name: "SWAPPAHOLIC",
