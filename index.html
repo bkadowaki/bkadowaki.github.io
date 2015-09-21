@@ -11,33 +11,31 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 	<!-- RAJDHANI FONT -->
 	<link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400' rel='stylesheet' type='text/css'>
+	<!-- ROBOTO -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>  	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>  
 	<!-- GOOGLE FONT -->
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-2.1.1.js"></script>
-	<!-- ANGULAR -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
-	<!-- ANGULAR ANIMATE -->
-	<script src="js/angular-animate.js"></script>
-	<!-- WAYPOINTS -->
-	<script src="js/waypoints.js"></script>
-	<!-- JS -->
-  <script src="js/app.js"></script>
   <title>Brett Kadowaki</title>
 </head>
 
 <body ng-controller="MainCtrl">
 
-	<!-- MAIN CONTAINER OPEN -->
+	<!-- OPEN MAIN CONTAINER -->
 	<div id="main-container">
 
+		<!-- OPEN COVER -->
 		<div id="cover">
-			<div class="letter-divs" ng-repeat="l in letters | limitTo: limitNum track by $index" ng-class="{'first': $index % 12 === 0, 'second': $index % 12 === 1, 'third': $index % 12 === 2, 'fourth': $index % 12 === 3, 'fifth': $index % 12 === 4, 'sixth': $index % 12 === 5, 'seventh': $index % 12 === 6, 'eighth': $index % 12 === 7, 'ninth': $index % 12 === 8, 'tenth': $index % 12 === 9, 'eleventh': $index % 12 === 10, 'twelfth': $index % 12 === 11}">
+			<div class="letter-divs" ng-repeat="l in letters track by $index" ng-class="{'first': $index % 12 === 0, 'second': $index % 12 === 1, 'third': $index % 12 === 2, 'fourth': $index % 12 === 3, 'fifth': $index % 12 === 4, 'sixth': $index % 12 === 5, 'seventh': $index % 12 === 6, 'eighth': $index % 12 === 7, 'ninth': $index % 12 === 8, 'tenth': $index % 12 === 9, 'eleventh': $index % 12 === 10, 'twelfth': $index % 12 === 11}">
 				{{letters[$index]}}
 			</div>
 			<div class="welcome">HELLO WORLD</div>
-			<div class="me">Brett Kadowaki | Front-End Web Developer</div>
+			<div class="cover-info">Brett Kadowaki | Front-End Web Developer</div>
 		</div>
+		<!-- CLOSE COVER -->
 		
+		<!-- OPEN NAV-BAR -->
 		<nav id="nav-bar">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 link-container" id="about-box">
@@ -63,8 +61,9 @@
 				</div>
 			</div>
 		</nav>
-		
+		<!-- CLOSE NAV-BAR -->
 
+		<!-- OPEN MEAT -->
 		<div id="meat">
 			<div id="about-container" class="container sections">
 				<div class="row">
@@ -73,7 +72,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4" id="left-about-cont">
+					<div class="col-sm-6 col-md-4 col-lg-4" id="left-about-cont">
 						<div id="bio">
 							I am a <h3 id="noun1">GOD FEARING</h3>
 							<!-- <span class="glyphicon glyphicon-cog small"> -->
@@ -89,7 +88,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-8" id="right-about-cont">
+					<div class="col-sm-10 col-md-8 col-lg-8" id="right-about-cont">
 						<div class="row">
 							<div class="col-md-12 skills-title">
 								<h2>SKILLS</h2>
@@ -97,40 +96,12 @@
 						</div>
 						<div id="left-tech" class="right-about-inner">
 							<div class="names-left">
-								<div class="tech-names">AngularJS</div>
-								<div class="tech-names">JavaScript</div>
-								<div class="tech-names">HTML5</div>
-								<div class="tech-names">CSS3</div>
-								<div class="tech-names">Ruby on Rails</div>
-								<div class="tech-names">jQuery | jQueryUI</div>
-								<div class="tech-names">D3</div>
-								<div class="tech-names">SASS</div>
-								<div class="tech-names">JSON</div>
-								<div class="tech-names">ExpressJS</div>
+								<div class="tech-names" ng-repeat="s in skills[0].leftSkills">
+									{{s.skill}}
+								</div>
 							</div>
 							<div class="levels-right">
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>								
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>								
+								<!-- skill: javascript -->
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
@@ -142,6 +113,19 @@
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
 								</div>								
+								<!-- skill: angular -->
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>	
+								<!-- skill: html -->		
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
@@ -151,19 +135,9 @@
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square"></i>
 								</div>								
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>								
+								<!-- skill: css -->		
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
@@ -174,45 +148,73 @@
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
-								</div>								
+								</div>	
+								<!-- skill: jQuery -->
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>								
+								</div>				
+								<!-- skill: bootstrap -->
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>								
+								</div>
+								<!-- skill: mongo -->
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>								
-								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>			
+								<!-- skill: git -->
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+								<!-- skill: api's -->				
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+								<!-- skill: oop -->			
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
@@ -223,39 +225,12 @@
 						</div>
 						<div id="right-tech" class="right-about-inner">
 							<div class="names-left">
-								<div class="tech-names">Twitter Bootstrap</div>
-								<div class="tech-names">Zurb Foundation</div>
-								<div class="tech-names">PostgreSQL</div>
-								<div class="tech-names">MongoDB</div>
-								<div class="tech-names">Git | GitHub</div>
-								<div class="tech-names">Heroku</div>
-								<div class="tech-names">MVC Concepts</div>
-								<div class="tech-names">Photoshop</div>
-								<div class="tech-names">Market Knowledge in <br>Digital Advertising</div>
+								<div class="tech-names" ng-repeat="s in skills[1].rightSkills">
+									{{s.skill}}
+								</div>
 							</div>
 							<div class="levels-right">
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-								</div>									
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>									
+								<!-- skill: mvp concepts -->
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
@@ -266,40 +241,20 @@
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
-								</div>									
+								</div>				
+								<!-- skill: ror -->				
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
-								</div>									
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>									
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>									
+								</div>		
+								<!-- skill: aws -->
 								<div class="tech-levels">
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square"></i>
@@ -310,33 +265,67 @@
 									<i class="fa fa-square"></i>
 									<i class="fa fa-square-o"></i>
 									<i class="fa fa-square-o"></i>
-								</div>									
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-									<i class="fa fa-square-o"></i>
-								</div>									
-								<div class="tech-levels">
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
-									<i class="fa fa-square"></i>
 								</div>
+								<!-- skill: express -->
 								<div class="tech-levels">
-									<i class="fa fa-square hide-me"></i>
-									<i class="fa fa-square hide-me"></i>
-								</div>								
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+								<!-- skill: node -->
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+								<!-- skill: polymer -->
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+								<!-- skill: photoshop -->
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+									<i class="fa fa-square-o"></i>
+								</div>
+								<!-- skill: market knowledge -->
+								<div class="tech-levels">
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+									<i class="fa fa-square"></i>
+								</div>							
 							</div>
 						</div>
 					</div>
@@ -353,17 +342,20 @@
 				<div class="row">
 					<div id="projects-cont">
 						<div class="row">
-							<div class="col-md-3 col-sm-4 col-xs-12 projects" ng-repeat="p in portfolioobjs track by $index" ng-click="toggle[$index]=!toggle[$index]" >
-								<div ng-if="toggle[$index]" class="work-info text animate-if">{{p.name}}<br><hr>
-									{{p.description}}<br>
-									Technologies Used:<br>
-									Front-End- {{p.frontend}}<br>
-									Backend- {{p.backend}}<br>
-									Database- {{p.database}}<br>
-									<a href="{{p.url}}" target="_blank">See More <i class="fa fa-angle-double-right"></i></a>
-								</div>
-								<div class="work-info">
-								<a href=""><img ng-src="{{p.image}}" class="project-images"></a>
+							<!-- ng-click="toggle[$index]=!toggle[$index]"  -->
+							<div class="project-wrapper col-xs-6" ng-repeat="p in projects track by $index">
+								<div class="projects" ng-init="bwImage = 1" ng-mouseover="bwImage = 0" ng-mouseleave="bwImage = 1">
+									<div ng-show="bwImage == 0" class="overlay-info">
+										<div class="project-name">{{p.name | uppercase }}</div>
+										<div class="project-text hidden-xs">
+											Front End: <div class="project-tech">{{p.frontend}}</div>
+											Backend: <div class="project-tech">{{p.backend}}</div>
+										</div>
+										<button class="view-project-btn">
+											<a href="{{p.url}}" class="view-project-anchor">VIEW PROJECT</a>
+										</button>
+									</div>
+									<img ng-src="{{p.images[bwImage]}}" class="project-images">
 								</div>
 							</div>
 						</div>
@@ -391,14 +383,26 @@
 				</div>
 			</div>
 		</div>
+		<!-- CLOSE MEAT -->
 
+		<!-- OPEN FOOTER -->
 		<footer>
 			<div id="footer-text">Brett Kadowaki<br><i class="fa fa-copyright"></i>2014</div>
 			<a id="back-to-top"><i class="fa fa-angle-double-up fa-3x"></i></a>
 			<div id="shh">How'd you find me??? Well since we're here, I want you to know that I appreciate you! Yeah, you!</div>
 		</footer>
+		<!-- CLOSE FOOTER -->
 	</div>
-	<!-- MAIN CONTAINER CLOSE -->
+	<!-- CLOSE MAIN CONTAINER -->
+
+	<!-- ANGULAR -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+	<!-- ANGULAR ANIMATE -->
+	
+	<!-- WAYPOINTS -->
+	<script src="js/waypoints.js"></script>
+	<!-- JS -->
+  <script src="js/app.js"></script>
 
 </body>
 

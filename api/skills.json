@@ -1,0 +1,100 @@
+[
+	{
+		"leftSkills": [
+			{
+				"skill": "JavaScript",
+				"level": 8,
+				"icon": ""
+			},
+			{
+				"skill": "AngularJS",
+				"level": 7,
+				"icon": ""
+			},
+			{
+				"skill": "HTML5",
+				"level": 10,
+				"icon": ""
+			},
+			{
+				"skill": "CSS3",
+				"level": 9,
+				"icon": ""
+			},
+			{
+				"skill": "jQuery",
+				"level": 6,
+				"icon": ""
+			},
+			{
+				"skill": "Twitter Bootstrap",
+				"level": 9,
+				"icon": ""
+			},
+			{
+				"skill": "MongoDB",
+				"level": 5,
+				"icon": ""
+			},
+			{
+				"skill": "Git | GitHub",
+				"level": 7,
+				"icon": ""
+			},
+			{
+				"skill": "APIs",
+				"level": 7,
+				"icon": ""
+			},
+			{
+				"skill": "OOP Design Patterns",
+				"level": 5,
+				"icon": ""
+			}
+		]
+	},
+	{
+		"rightSkills": [
+			{
+				"skill": "MVC Concepts",
+				"level": 6,
+				"icon": ""
+			},
+			{
+				"skill": "Ruby | Ruby on Rails",
+				"level": 4,
+				"icon": ""
+			},
+			{
+				"skill": "Amazon Web Services",
+				"level": 6,
+				"icon": ""
+			},
+			{
+				"skill": "ExpressJS",
+				"level": 3,
+				"icon": ""
+			},
+			{
+				"skill": "NodeJS",
+				"level": 3,
+				"icon": ""
+			},
+			{
+				"skill": "Google's Polymer",
+				"level": 4,
+				"icon": ""
+			},
+			{
+				"skill": "Photoshop",
+				"level": 4,
+				"icon": ""
+			},
+			{
+				"skill": "Market Knowledge in Digital Advertising",
+				"level": 10,
+				"icon": ""
+			}
+		]
+	}
+]
