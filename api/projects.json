@@ -1,0 +1,38 @@
+[
+	{
+		"name": "UPLY",
+		"images": ["images/uply-bwS.png","images/uplyS.png"],
+		"description": "Website ranking web app",
+		"frontend": "AngularJS, JavaScript, jQuery, HTML5, CSS3, SASS, D3, Zurb Foundation",
+		"backend": "Ruby on Rails",
+		"database": "PostgreSQL",
+		"url": "http://up-ly.herokuapp.com/#/"
+	},	
+	{
+		"name": "BRETT & NICOLE WEDDING SITE",
+		"images": ["images/weddingsite-bwS.png","images/weddingsiteS.png"],
+		"description": "Personal wedding site",
+		"frontend": "JavaScript, jQuery, HTML5, CSS3, Twitter Bootstrap",
+		"backend": "Ruby on Rails",
+		"database": "MongoDB",
+		"url": "http://www.kadowakiwedding.com/"
+	},
+	{
+		"name": "WDI9 DIGITAL YEARBOOK",
+		"images": ["images/wdi9-bwS.png","images/wdi9S.png"],
+		"description": "WDI9's digital yearbook",
+		"frontend": "AngularJS, JavaScript, jQuery, HTML5, CSS3, Twitter Bootstrap",
+		"backend": "n/a",
+		"database": "n/a",
+		"url": "https://wdi9ga.firebaseapp.com/"
+	},	
+	{
+		"name": "SWAPPAHOLIC",
+		"images": ["images/swappaholic-bwS.png","images/swappaholicS.png"],
+		"description": "Bartering platform",
+		"frontend": "JavaScript, jQuery, HTML5, CSS3, D3, Twitter Bootstrap",
+		"backend": "Ruby on Rails",
+		"database": "PostgreSQL",
+		"url": "http://swappaholic.herokuapp.com/"
+	}
+]
